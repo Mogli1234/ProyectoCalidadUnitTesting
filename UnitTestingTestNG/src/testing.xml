@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Test for Divide">
+    <test name="testDivide">
+        <parameter name="First_number" value="20"/>
+        <parameter name="Second_number" value="2"/> 
+        <classes>
+            <class name="Logic.UtilitiesNGTest"/>
+        </classes>
+    </test>
+</suite>  
+</root>

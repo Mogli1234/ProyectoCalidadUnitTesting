@@ -5,7 +5,8 @@
  */
 package Logic;
 
-import static org.testng.Assert.*;
+import java.util.Random;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
@@ -13,15 +14,20 @@ import org.testng.annotations.Test;
  * @author MOGLI
  */
 public class UtilitiesNGTest {
-    
+    Utilities util = new Utilities();
+    Random numberRandom = new Random(100);
     public UtilitiesNGTest() {
     }
 
+    
     /**
      * Test of divide method, of class Utilities.
      */
+
+    @Parameters({"First_number","Second_number"})
     @Test
-    public void testDivide() {
+    public void testDivide(int First_number, int Second_number) {
+      util.divide(First_number,Second_number);
     }
 
     /**
