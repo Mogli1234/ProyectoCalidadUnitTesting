@@ -9,9 +9,19 @@ and open the template in the editor.
 <suite name="Testnumber1" verbose="1" >
  <parameter name="Number1"  value="10"/>
  <parameter name="Number2"  value="2"/>
-  <test name="Nopackage" >
+ <test name="Nopackage" >
     <classes>
-        <class name="TestUtilitiesClass"></class>
+        <class name="folder.TestUtilitiesClass"></class>
+    </classes>
+  </test>
+  <parameter name="cadena"  value="akhbdfgi734k"/>
+  <test name="TestString" >
+    <classes>
+        <class name="folder.TestNumericString">
+            <method>
+                <include name="TestXtractNumberForString"/>
+            </method>
+        </class>
     </classes>
   </test>
 </suite>

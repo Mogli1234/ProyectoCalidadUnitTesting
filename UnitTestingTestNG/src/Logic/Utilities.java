@@ -20,7 +20,25 @@ public class Utilities {
     
     
     //This is you function pablo 
-    public int xtractNumberForString(){
-        return 0;
+    public int xtractNumberForString(String cadena){
+        int result = 0;
+        for (int i = 0; i < cadena.length(); i++){
+            char letra = cadena.charAt(i);
+            if (letra == '1' || 
+                letra == '2' ||
+                letra == '3' ||
+                letra == '4' ||
+                letra == '5' ||
+                letra == '6' ||
+                letra == '7' ||
+                letra == '8' ||
+                letra == '9' ||
+                letra == '0'){
+            result = Integer.parseInt(""+ letra);   
+            break;
+            }
+        }
+        System.out.println(result);
+        return result;
     }
 }
