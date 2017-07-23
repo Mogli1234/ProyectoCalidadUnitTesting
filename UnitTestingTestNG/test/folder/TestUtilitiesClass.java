@@ -25,6 +25,4 @@ public class TestUtilitiesClass {
     public void TestDivider(int Number1, int Number2){
     util.divide(Number1, Number2);
     }
-    
-   
 }

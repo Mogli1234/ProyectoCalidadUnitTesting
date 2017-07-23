@@ -18,10 +18,10 @@ public class TestNumericString {
        Utilities util = new Utilities();
     public TestNumericString() {
     }
- @Parameters({"cadena"})
+    
+    @Parameters({"cadena"})
     @Test
     public void TestXtractNumberForString(String cadena){
-    util.xtractNumberForString(cadena);
-    } 
-    
+    System.out.println(util.xtractNumberForString(cadena));
+    }   
 }

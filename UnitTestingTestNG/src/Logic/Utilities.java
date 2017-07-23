@@ -20,25 +20,30 @@ public class Utilities {
     
     
     //This is you function pablo 
-    public int xtractNumberForString(String cadena){
-        int result = 0;
-        for (int i = 0; i < cadena.length(); i++){
-            char letra = cadena.charAt(i);
-            if (letra == '1' || 
-                letra == '2' ||
-                letra == '3' ||
-                letra == '4' ||
-                letra == '5' ||
-                letra == '6' ||
-                letra == '7' ||
-                letra == '8' ||
-                letra == '9' ||
-                letra == '0'){
-            result = Integer.parseInt(""+ letra);   
-            break;
+    public String xtractNumberForString(String cadena){
+        String result = "";
+        if(cadena == "" || cadena == null){
+            result = "No hay numeros";
+        }else{
+            for (int i = 0; i < cadena.length(); i++){
+                char letra = cadena.charAt(i);
+                if (isNumeric(letra)){
+                    result =letra + "";
+                    break;
+                }else{
+                result = "No hay Numeros";
+                }           
             }
         }
-        System.out.println(result);
         return result;
+    }
+            
+    private static boolean isNumeric(char cadena){
+	try {
+            Integer.parseInt(cadena+"");
+            return true;
+	} catch (NumberFormatException nfe){
+            return false;
+	}
     }
 }
