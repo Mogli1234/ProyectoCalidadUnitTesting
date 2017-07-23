@@ -5,6 +5,8 @@
  */
 package unittestingtestng;
 
+import Logic.Utilities;
+
 /**
  *
  * @author MOGLI
@@ -15,7 +17,7 @@ public class UnitTestingTestNG {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+    Object x = new Utilities().xtractNumberForString("aere3sdvzw2");
     }
     
 }
