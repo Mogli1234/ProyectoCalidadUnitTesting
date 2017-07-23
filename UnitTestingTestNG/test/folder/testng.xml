@@ -11,7 +11,17 @@ and open the template in the editor.
  <parameter name="Number2"  value="2"/>
  <test name="Nopackage" >
     <classes>
-        <class name="TestUtilitiesClass"></class>
+        <class name="folder.TestUtilitiesClass"></class>
+    </classes>
+  </test>
+  <parameter name="cadena"  value="akhbdfgi734k"/>
+  <test name="TestString" >
+    <classes>
+        <class name="folder.TestNumericString">
+            <method>
+                <include name="TestXtractNumberForString"/>
+            </method>
+        </class>
     </classes>
   </test>
 </suite>
