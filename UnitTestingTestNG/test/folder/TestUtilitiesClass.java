@@ -21,16 +21,11 @@ public class TestUtilitiesClass {
     
     public TestUtilitiesClass() {
     }
-    @DataProvider(name = "Divider")
-     public static Object[] createData() {
-    return new Object[]{
-       int i =2;
-    };
-  }
-    
-    @Test(dataProvider = "Divider")
+
+    @Parameters({"Number1","Number2"})
+    @Test
     public void TestDivider(int Number1, int Number2){
-    util.divide(Number1, Number2);
+    System.out.println("This is the result "+util.divide(Number1, Number2));
     }
       
 }
