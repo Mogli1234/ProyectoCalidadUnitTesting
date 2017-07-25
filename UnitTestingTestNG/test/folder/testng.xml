@@ -7,14 +7,29 @@ and open the template in the editor.
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="Testnumber1" verbose="1" >
- <parameter name="Number1"  value="10"/>
- <parameter name="Number2"  value="2"/>
- <test name="Nopackage" >
+  <parameter name="Number1" value="10"/>
+  <parameter name="Number2" value="2"/>
+  <parameter name="numberToDivide" value="15"/>
+  <parameter name="nullParameter" value="null"/>
+  <parameter name="numberToDivideWithCero" value="25"/>
+  <test name="TestDivider" >
     <classes>
+<<<<<<< HEAD
         <class name="folder.TestUtilitiesClass"></class>
     </classes>
   </test>
   <parameter name="cadena"  value="ljkjv"/>
+=======
+        <class name="folder.TestUtilitiesClass">
+            <methods>
+                <include name="TestDividerTonull"/>
+                <include name="TestDivider"/>
+                <include name="TestDividerPrintCero"/>
+            </methods>
+          </class>
+     </classes>
+  <parameter name="cadena"  value="akhbdfgi734k"/>
+>>>>>>> 87d3476d0d9a979b0ea3f25e71f2b06769d74558
   <test name="TestString" >
     <classes>
         <class name="folder.TestNumericString">

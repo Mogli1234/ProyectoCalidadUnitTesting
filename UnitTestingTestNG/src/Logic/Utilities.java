@@ -13,7 +13,12 @@ public class Utilities {
     
     //this is mine
     public int divide(int num1, int num2){
-        int result = num1/num2;
+        int result;
+        if (num2==0) {
+            result = 0;
+        }else{
+            result = num1 / num2;
+        }
             return result;
     }
     
