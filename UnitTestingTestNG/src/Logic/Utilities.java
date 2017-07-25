@@ -21,8 +21,9 @@ public class Utilities {
     
     //metodo para obtener el primer numero de una cadena de texto
     public String xtractNumberForString(String cadena){
-        String result = "";
-        if(cadena.isEmpty() || isNull(cadena)){
+        String result = "Dato Nulo";
+        try {
+           if(cadena.isEmpty()){
             result = "No hay numeros";
         }else{
             for (int i = 0; i < cadena.length(); i++){
@@ -35,7 +36,11 @@ public class Utilities {
                 }           
             }
         }
-        return result;
+        return result; 
+        } catch (NullPointerException e) {
+            return result;
+        }
+        
     }
     // verifica si el valor del char es numerico        
     private boolean isNumeric(char cadena){
@@ -45,13 +50,5 @@ public class Utilities {
 	} catch (NumberFormatException nfe){
             return false;
 	}
-    }
-    // verifica que la cadena de texto sea nula 
-    private boolean isNull(String Dato){
-        if(Dato == null){
-            return true;
-        }else{
-            return false;
-        }
     }    
 }

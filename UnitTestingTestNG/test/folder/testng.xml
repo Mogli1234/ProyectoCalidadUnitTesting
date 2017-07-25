@@ -14,7 +14,7 @@ and open the template in the editor.
         <class name="folder.TestUtilitiesClass"></class>
     </classes>
   </test>
-  <parameter name="cadena"  value="null"/>
+  <parameter name="cadena"  value="ljkjv"/>
   <test name="TestString" >
     <classes>
         <class name="folder.TestNumericString">
