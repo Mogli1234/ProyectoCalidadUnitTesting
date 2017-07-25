@@ -39,5 +39,4 @@ public class TestUtilitiesClass {
     public void TestDividerPrintCero(int numberToDivide){
     System.out.println("This pass when you use cero to divede they return "+util.divide(numberToDivide,0));
     }
-      
 }

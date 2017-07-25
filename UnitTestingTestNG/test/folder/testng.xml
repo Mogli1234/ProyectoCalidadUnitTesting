@@ -20,6 +20,15 @@ and open the template in the editor.
                 <include name="TestDivider"/>
                 <include name="TestDividerPrintCero"/>
             </methods>
+          </class>
+     </classes>
+  <parameter name="cadena"  value="akhbdfgi734k"/>
+  <test name="TestString" >
+    <classes>
+        <class name="folder.TestNumericString">
+            <method>
+                <include name="TestXtractNumberForString"/>
+            </method>
         </class>
     </classes>
   </test>
