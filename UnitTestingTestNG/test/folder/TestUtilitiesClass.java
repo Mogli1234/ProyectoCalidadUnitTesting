@@ -27,5 +27,11 @@ public class TestUtilitiesClass {
     public void TestDivider(int Number1, int Number2){
     System.out.println("This is the result "+util.divide(Number1, Number2));
     }
+    
+    @Parameters({"numberToDivide","nullParameter"})
+    @Test
+    public void TestDividerTonull(int numberToDivide, int nullParameter){
+    System.out.println("This is the result "+util.divide(numberToDivide, nullParameter));
+    }
       
 }
