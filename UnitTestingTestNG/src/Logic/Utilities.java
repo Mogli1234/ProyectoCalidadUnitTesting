@@ -19,10 +19,10 @@ public class Utilities {
     
     
     
-    //This is you function pablo 
+    //metodo para obtener el primer numero de una cadena de texto
     public String xtractNumberForString(String cadena){
         String result = "";
-        if(cadena == "" || cadena == null){
+        if(cadena.isEmpty() || isNull(cadena)){
             result = "No hay numeros";
         }else{
             for (int i = 0; i < cadena.length(); i++){
@@ -31,14 +31,14 @@ public class Utilities {
                     result =letra + "";
                     break;
                 }else{
-                result = "No hay Numeros";
+                    result = "No hay Numeros";
                 }           
             }
         }
         return result;
     }
-            
-    private static boolean isNumeric(char cadena){
+    // verifica si el valor del char es numerico        
+    private boolean isNumeric(char cadena){
 	try {
             Integer.parseInt(cadena+"");
             return true;
@@ -46,4 +46,12 @@ public class Utilities {
             return false;
 	}
     }
+    // verifica que la cadena de texto sea nula 
+    private boolean isNull(String Dato){
+        if(Dato == null){
+            return true;
+        }else{
+            return false;
+        }
+    }    
 }
