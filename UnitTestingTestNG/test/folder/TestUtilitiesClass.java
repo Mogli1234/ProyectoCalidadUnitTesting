@@ -21,15 +21,6 @@ public class TestUtilitiesClass {
     
     public TestUtilitiesClass() {
     }
-
-    @Parameters({"Number1","Number2"})
-    @Test
-    public void TestDivider(int Number1, int Number2){
-    System.out.println("This is the result "+util.divide(Number1, Number2));
-    }
-<<<<<<< HEAD
-=======
-    
     @Parameters({"numberToDivide","nullParameter"})
     @Test
     public void TestDividerTonull(int numberToDivide, int nullParameter){
@@ -41,5 +32,4 @@ public class TestUtilitiesClass {
     public void TestDividerPrintCero(int numberToDivide){
     System.out.println("This pass when you use cero to divede they return "+util.divide(numberToDivide,0));
     }
->>>>>>> 87d3476d0d9a979b0ea3f25e71f2b06769d74558
 }
