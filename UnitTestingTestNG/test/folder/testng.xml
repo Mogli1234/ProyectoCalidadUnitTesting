@@ -11,12 +11,14 @@ and open the template in the editor.
   <parameter name="Number2" value="2"/>
   <parameter name="numberToDivide" value="15"/>
   <parameter name="nullParameter" value="null"/>
+  <parameter name="numberToDivideWithCero" value="25"/>
   <test name="TestDivider" >
     <classes>
         <class name="folder.TestUtilitiesClass">
             <methods>
                 <include name="TestDividerTonull"/>
                 <include name="TestDivider"/>
+                <include name="TestDividerPrintCero"/>
             </methods>
         </class>
     </classes>

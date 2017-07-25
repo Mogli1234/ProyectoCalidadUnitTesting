@@ -33,5 +33,11 @@ public class TestUtilitiesClass {
     public void TestDividerTonull(int numberToDivide, int nullParameter){
     System.out.println("This is the result "+util.divide(numberToDivide, nullParameter));
     }
+    
+    @Parameters({"numberToDivideWithCero"})
+    @Test
+    public void TestDividerPrintCero(int numberToDivide){
+    System.out.println("This pass when you use cero to divede they return "+util.divide(numberToDivide,0));
+    }
       
 }
