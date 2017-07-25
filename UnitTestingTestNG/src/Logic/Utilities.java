@@ -25,22 +25,21 @@ public class Utilities {
         try {
            if(cadena.isEmpty()){
             result = "No hay numeros";
-        }else{
-            for (int i = 0; i < cadena.length(); i++){
-                char letra = cadena.charAt(i);
-                if (isNumeric(letra)){
-                    result =letra + "";
-                    break;
-                }else{
-                    result = "No hay Numeros";
-                }           
+            }else{
+                for (int i = 0; i < cadena.length(); i++){
+                    char letra = cadena.charAt(i);
+                    if (isNumeric(letra)){
+                        result =letra + "";
+                        break;
+                    }else{
+                        result = "No hay Numeros";
+                    }           
+                }
             }
-        }
-        return result; 
+            return result; 
         } catch (NullPointerException e) {
             return result;
-        }
-        
+        }     
     }
     // verifica si el valor del char es numerico        
     private boolean isNumeric(char cadena){
