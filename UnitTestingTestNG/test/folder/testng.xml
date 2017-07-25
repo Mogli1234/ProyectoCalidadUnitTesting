@@ -14,12 +14,6 @@ and open the template in the editor.
   <parameter name="numberToDivideWithCero" value="25"/>
   <test name="TestDivider" >
     <classes>
-<<<<<<< HEAD
-        <class name="folder.TestUtilitiesClass"></class>
-    </classes>
-  </test>
-  <parameter name="cadena"  value="ljkjv"/>
-=======
         <class name="folder.TestUtilitiesClass">
             <methods>
                 <include name="TestDividerTonull"/>
@@ -28,8 +22,10 @@ and open the template in the editor.
             </methods>
           </class>
      </classes>
+ </test>   
   <parameter name="cadena"  value="akhbdfgi734k"/>
->>>>>>> 87d3476d0d9a979b0ea3f25e71f2b06769d74558
+  <parameter name="cadena"  value="akhbdfgi"/>
+  <parameter name="cadena"  value="akhbdfgs1i"/>
   <test name="TestString" >
     <classes>
         <class name="folder.TestNumericString">
